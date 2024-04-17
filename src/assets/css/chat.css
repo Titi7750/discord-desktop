@@ -1,0 +1,69 @@
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+.form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background: #f8f9fa;
+}
+
+.form input[type="text"] {
+    width: 50%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.form input[type="submit"] {
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #424242;
+    color: #fff;
+    cursor: pointer;
+}
+
+.message-container {
+    position: fixed;
+    top: 80px;
+    bottom: 50px;
+    overflow-y: auto;
+    padding: 1em;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.containerMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #424242;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin-bottom: 2em;
+    width: calc(50% - 4em);
+    clear: both;
+}
+
+.containerMessage:nth-child(2n+1) {
+    float: left;
+    margin-left: 2em;
+}
+
+.containerMessage:nth-child(2n) {
+    float: right;
+    margin-right: 2em;
+}
