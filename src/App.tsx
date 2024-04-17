@@ -1,7 +1,9 @@
+import { Chat } from "./Components/Chat";
+
 export const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Chat />
     </div>
   );
 };
