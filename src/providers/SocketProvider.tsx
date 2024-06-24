@@ -5,7 +5,6 @@ export type AppSocket = {
   send(message: unknown): void;
 };
 
-// Declare typings of code exposed by Electron on window object
 declare global {
   interface Window {
     MessageAPI: {

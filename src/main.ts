@@ -1,6 +1,7 @@
 import { app, BrowserWindow, ipcMain } from "electron";
 import path from "path";
 import { io } from "socket.io-client";
+import { Message } from "./Components/MessageList";
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
@@ -43,7 +44,7 @@ const createWindow = () => {
     socket.off("message", handleMessage);
   });
 
-  ipcMain.on("socket-message", (_, message) => {
+  ipcMain.on("socket-message", (_, message: Message) => {
     socket.emit("message", message);
   });
 };
